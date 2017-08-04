@@ -7,7 +7,7 @@ your function should display what the grade is for a particular score. Here is t
 
 def gradeScale():
 
-	for i in range(60,101):  #Run the For Loop from numbers 60 to 100
+	for i in range(60,101):  #Run the For Loop with a range of numbers from 60 to 100
 	
 		if i <= 70: 
 			print "Score:", i,"; Your grade is D"
