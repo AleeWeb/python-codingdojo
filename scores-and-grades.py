@@ -2,10 +2,8 @@ import random
 
 def gradeScale():
     for i in range(10):  # Run the For Loop 10 times
-        score = random.randint(60, 100)
-
-        # print score
-
+        score = random.randint(60, 100)   # print score
+       
         if score <= 70:
             print 'Score:', score, '; Your grade is D'
         elif score <= 80:
