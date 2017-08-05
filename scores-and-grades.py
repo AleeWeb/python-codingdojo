@@ -1,26 +1,19 @@
-
-'''
-Write a function that generates ten scores between 60 and 100. Each time a score is generated, 
-your function should display what the grade is for a particular score. Here is the grade table:
-
-'''
+import random
 
 def gradeScale():
+    for i in range(10):  # Run the For Loop 10 times
+        score = random.randint(60, 100)
 
-	for i in range(60,101):  #Run the For Loop from numbers 60 to 100
-	
-		if i <= 70: 
-			print "Score:", i,"; Your grade is D"
+        # print score
 
-		elif i <= 80: 
-			print "Score:", i,"; Your grade is C"
+        if score <= 70:
+            print 'Score:', score, '; Your grade is D'
+        elif score <= 80:
+            print 'Score:', score, '; Your grade is C'
+        elif score <= 90:
+            print 'Score:', score, '; Your grade is B'
+        elif score <= 100:
+            print 'Score:', score, '; Your grade is A'
 
-		elif i <= 90: 
-			print "Score:", i,"; Your grade is B"
-
-
-		elif i <= 100: 
-			print "Score:", i,"; Your grade is A"
-			
 
 gradeScale()
