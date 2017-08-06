@@ -1,12 +1,11 @@
-
 #assignment to print a cool checkerboard made of asterisks
 
-def checkerBoard():
-    for i in range of 8:  #Because there are 8 rows of stars in the assignment requirement
-
-
-
-
-
-
-checkerBoard()
+checkerBoard = 8
+num= 0
+for num in range(8):  #There are 8 required rows of stars in this assignment
+    if num % 2 == 0:  #if number is divisible by two then it is an even number
+        print "* * * *"
+    else:
+        print " * * * *"
+    num+=1
+			
