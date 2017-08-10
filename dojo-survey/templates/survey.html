@@ -1,1 +1,26 @@
-
+<!Doctype html>
+<html>
+    <head>
+        <title>Dojo Survey index</title>
+    </head>
+    <body>
+        <h1>Dojo Survey Index</h1>
+            <form action='/create' method='post'>
+                Your Name: <input type='text' name='name'/><br/>
+                Dojo Location:
+                    <select name='location'>
+                        {% for loc in optionList %}  <!--Location variable in For Loop -->
+                            <option name="{{ loc }}">{{ loc }}</option>
+                        {% endfor %}
+                    </select> <br/>
+                Favorite Language:
+                    <select name='language'>
+                        {% for lang in langList %}
+                            <option name="{{ lang }}">{{ lang }}</option>
+                        {% endfor %}
+                    </select> <br/>
+                Comment (optional): <textarea rows="4" cols="50" name='comment'></textarea> <br/>
+                <input type='submit' value='Submit'>
+            </form>
+    </body>
+</html>
